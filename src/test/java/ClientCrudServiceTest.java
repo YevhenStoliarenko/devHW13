@@ -15,10 +15,8 @@ class ClientCrudServiceTest {
 
     @Test
     void getClientById() {
-
         int clientById = clientCrudService.getClientById(2).getId();
         int expected = 2;
-
         assertEquals(expected, clientById);
     }
 
@@ -31,13 +29,13 @@ class ClientCrudServiceTest {
 
     @Test
     void updateClient() {
-        boolean result = clientCrudService.updateClient(10, "Olha");
+        boolean result = clientCrudService.updateClient(2, "Olha");
         assertEquals(true, result);
     }
 
     @Test
-    void deleteTicket() {
-        boolean result = clientCrudService.deleteTicket(8);
+    void deleteClientById() {
+        boolean result = clientCrudService.deleteClientById(3);
         assertEquals(true, result);
     }
 

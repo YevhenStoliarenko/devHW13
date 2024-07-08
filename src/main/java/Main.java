@@ -13,28 +13,28 @@ public class Main {
 //        Connection connection = Database.getInstance().getConnection();
         ClientCrudService clientCrudService = new ClientCrudService();
         TicketCrudService ticketCrudService = new TicketCrudService();
-//        Client newClient = Client.builder()
-//                .name("Nik")
-//                .build();
-//        clientCrudService.deleteClientById(7);
+        Client newClient = Client.builder()
+                .name("Miro")
+                .build();
 //        clientCrudService.createClient(newClient);
+//        System.out.println(clientCrudService.getClientById(17));
 //        clientCrudService.updateClient(6, "Martin");
-//        Client clientById = clientCrudService.getClientById(8);
-//        System.out.println(clientById);
-//
-//        Ticket newTicket = new Ticket().builder()
-//                .createdTime("2013-01-09 07:15:00")
-//                .client(clientById)
-//                .fromPlanet("MRS")
-//                .toPlanet("URN")
-//                .build();
-//
+//        clientCrudService.deleteClientById(1);
+
+        Ticket newTicket = new Ticket().builder()
+                .createdTime("2013-01-09 07:15:00")
+                .client(newClient)
+                .fromPlanet("JPT1")
+                .toPlanet("URN")
+                .build();
+
 //        ticketCrudService.createTicket(newTicket);
-//        ticketCrudService.updateTicket(6, newTicket);
-//        ticketCrudService.deleteTicket(8);
+//        System.out.println(ticketCrudService.getTicketById(13));
+//        ticketCrudService.updateTicket(4, newTicket);
+//        ticketCrudService.deleteTicket(13);
 
 
-        ticketCrudService.getTicketById(1);
+
 
 
 
